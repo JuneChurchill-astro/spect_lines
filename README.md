@@ -34,3 +34,4 @@ Create epoch comparison method so that multiple epochs can be compared
 Change critical point checking code so that slope is calculated once for the entire dataset
 Reorganize code, relocating helper methods to be internal
 General QOL changes and improving docstring wording
+Fixing duplicate line identifications
