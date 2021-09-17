@@ -11,9 +11,6 @@ Created on Wed Sep 15 02:08:23 2021
 import numpy as np
 from scipy.constants import c
 
-dir = "C:/Users/junec/Documents/SN_2012au/"
-
-
 def find_lines(wave: list, flux: list, fit_length: int, min_width: float, wavelengths_only = False):
     """
     Returns 2 two-dimensional lists listing the detected minima, maxima, and estimated line widths for the inputted spectrum
