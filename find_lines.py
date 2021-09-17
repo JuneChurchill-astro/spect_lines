@@ -91,7 +91,9 @@ def find_lines(wave: list, flux: list, fit_length: int, min_width: float, wavele
                    
                       minimums = [[wave[index], left*λ, right*λ, index, left, right]]
                   
-                   minimums.append([wave[index], left*λ, right*λ, index, left, right])
+                   else:
+                        
+                        minimums.append([wave[index], left*λ, right*λ, index, left, right])
                    
     if wavelengths_only:
         maximums = [a[0] for a in maximums]
