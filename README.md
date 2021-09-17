@@ -10,17 +10,17 @@ minimums = empty list of values
 
 for every flux value in spectrum_wavelengths:
 
-  --if flux is higher than neighboring points:
-    ----find left critical point
-    ----find right critical point 
-    ----if left & right critical points are far enough away from max:
-      ------add wavelength and width values to maximums
+  if flux is higher than neighboring points:
+    find left critical point
+    find right critical point 
+    if left & right critical points are far enough away from max:
+      add wavelength and width values to maximums
   
-  --if flux is lower than neighboring points:
-    ----find left critical point
-    ----find right critical point
-    ----if left & right critical points are far enough away from min:
-      ------add wavelength and width values to minimums
+  if flux is lower than neighboring points:
+    find left critical point
+    find right critical point
+    if left & right critical points are far enough away from min:
+      add wavelength and width values to minimums
     
     
 find_lines also contains the vel() method which calculates the relative velocities of detected line signatures around an inputted rest wavelength
