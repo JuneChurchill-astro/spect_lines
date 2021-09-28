@@ -30,8 +30,5 @@ There are many features to be added and changes to make, here's my TODO:
 Add error handling
 Implement error analysis and confidence metrics for line widths
 Create new prominence checking method as an alternate filter method instead of line widths
-Create epoch comparison method so that multiple epochs can be compared
-Change critical point checking code so that slope is calculated once for the entire dataset
-Reorganize code, relocating helper methods to be internal
+Create epoch comparison method
 General QOL changes and improving docstring wording
-Fixing duplicate line identifications
