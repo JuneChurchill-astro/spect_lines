@@ -235,11 +235,11 @@ def find_lines(wave: list, flux: list, fit_length: int, min_width: float, wavele
                 ## if the bounds of one line overlap the center of the other and vice versa they are overlapping
                 ## combines overlapping lines into one signature
                 ## sets new center line of combined signature to be the local extrema of the two combining lines
-                ## cleans up maximums and minimums from noisy data
+                ## cleans up maxima and minima from noisy data
                 
                 if (lines[i][0] + lines[i][2] >= lines[i+1][0] and lines[i+1][0] - lines[i+1][1] <= lines[i][0]): 
                     
-                    # checking minimums
+                    # checking minima
                     
                     if maxmin == -1:
                         
@@ -249,7 +249,7 @@ def find_lines(wave: list, flux: list, fit_length: int, min_width: float, wavele
                                           lines[i+1][0], lines[i+1][0]-lines[i][0]+lines[i][1], lines[i+1][2],
                                           lines[i+1][3], lines[i+1][3]-lines[i][3]+lines[i][4], lines[i+1][5])
                     
-                    # checking maximums 
+                    # checking maxima
                                           
                     if maxmin == 1:    
                         
